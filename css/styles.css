@@ -15,6 +15,37 @@ body{
 --footer-background-color:#2F303A;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address{
+  font-style: normal;
+}
+
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
 /* studio styles */
 /* ------------------------header styles------------------------------ */
 
@@ -46,11 +77,6 @@ letter-spacing: 0.03em;
   cursor: pointer;
   font-family: inherit;
 } 
-
-
-.ul{ 
-  list-style: none;
-}
 
 .header-nav, .header-contacts {
   width: 1600px;
@@ -203,6 +229,10 @@ letter-spacing: 0.03em;
 
 /* profile styles */
 /* ------------------------ styles------------------------------ */
+
+.profile-title{
+visibility: hidden;
+}
 
 .btn-portfolio {
   font-family: inherit;
