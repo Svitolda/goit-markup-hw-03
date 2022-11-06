@@ -40,10 +40,13 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
+outline: 2px solid red;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* studio styles */
@@ -51,6 +54,7 @@ img {
 
 .header{
 background: var(--white);
+
 }
 
 .logo-link{
@@ -59,6 +63,7 @@ color: var(--black);
 font-size: 26px;
 line-height: calc(31/26);
 letter-spacing: 0.03em;
+margin-right: 93px;
 }
 
 .web{
@@ -76,13 +81,26 @@ letter-spacing: 0.03em;
 .btn{
   cursor: pointer;
   font-family: inherit;
+  display: block;
+  margin: auto;
 } 
 
-.header-nav, .header-contacts {
-  width: 1600px;
+.header-container{
+  display: flex;
+  align-items: center;
   height: 80px;
+  gap: 50px;
+}
+
+.navigation{
+  margin-right: auto;
+}
+
+.header-nav, .header-contacts {
   left: 0px;
   top: 0px;
+  display: flex;
+  gap: 50px;
 }
 
 .nav-link {
@@ -113,8 +131,19 @@ letter-spacing: 0.03em;
 /* ------------------------section styles------------------------------ */
 
 .section {
- width: 1600px;
+  width: 1600px;
   background: var(--section-color);
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
+.header-container{
+  display: flex;
 }
 
 .section-title {
@@ -136,6 +165,8 @@ letter-spacing: 0.03em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--main-text-color);
+  margin-top: 30px;
+  padding: 10px 29px;
 }
 .section-btn:hover,
 .section-btn:focus{
@@ -144,12 +175,30 @@ letter-spacing: 0.03em;
 }
 /* ------------------------about styles------------------------------ */
 
+.about-container{
+  display: flex;
+}
+
+.about{
+  padding: 94px 215px;
+}
+
+.about-list{
+  display: flex;
+  gap: 30px;
+}
+
+.about-list-item{
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .about-title {
   font-size: 14px;
   line-height: calc(16/14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  padding-bottom: 10px;
 }
 .about-sutitle {
   font-size: 14px;
@@ -160,12 +209,28 @@ letter-spacing: 0.03em;
 
 /* ------------------------aside styles------------------------------ */
 
+
+/* .aside-container{
+  display: flex;
+} */
+
+.aside-list{
+  display: flex;
+  gap: 10px;
+}
+
+.aside-list-item{
+flex-basis: calc((100% - 30px) / 3);
+}
+
 .aside-title {
   font-size: 36px;
   line-height: calc(42/36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  padding-bottom: 50px;
+  
 }
 
 /* ------------------------team styles------------------------------ */
@@ -174,6 +239,27 @@ letter-spacing: 0.03em;
   background: var(--team-section-color);
 }
 
+/* .team-container{
+  display: flex;
+} */
+
+.team-list{
+  display: flex;
+  gap: 10px;
+  width: 1170px;
+}
+
+.team-item{
+  flex-basis: calc((100% - 90px) / 4);
+  left: 215px;
+  top: 1632px;
+  background: var(--white)
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  }
+
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -181,6 +267,8 @@ letter-spacing: 0.03em;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-item-sutitle {
@@ -196,14 +284,25 @@ letter-spacing: 0.03em;
 
 .footer {
   background: var(--footer-background-color);
+  width: 1600px;
+  background: var(--section-color);
+  margin: 0 auto;
 }
+
 .logo-footer-link{
   font-family: Raleway;
   font-size: 26px;
   line-height: calc(31/16);
   letter-spacing: 0.03em;
   color: var(--white);
+  margin-top: 10px;   
 } 
+
+.address{
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
 .address-link{
   font-style: normal;
   font-size: 14px;
