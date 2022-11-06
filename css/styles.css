@@ -4,7 +4,8 @@ body{
     background-color: #ffffff;
     color: var(--main-text-color);
 }
-:root { --main-text-color: #212121;
+:root { 
+--main-text-color: #212121;
 --secondary-text-color: #757575;
 --accent: #2196F3;
 --white: #ffffff; 
@@ -13,6 +14,7 @@ body{
 --section-color: #2F303A;
 --btn-color: #F5F4FA;
 --footer-background-color:#2F303A;
+--border-project-color: #EEEEEE;
 }
 
 h1,
@@ -402,18 +404,14 @@ justify-content: center;
 
 .content-iten{
 flex-basis: calc((100% - 30px) / 3);
-/* box-sizing: border-box;
-background: var(--white) 
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-width: 322px; */
 }
 
 .project{
   padding: 20px 24px;
   border: 1px solid var(--border-project-color);
   border-top: 0;
-  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .content-subtitle{
@@ -426,4 +424,5 @@ width: 322px; */
   line-height: calc(30/16);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
