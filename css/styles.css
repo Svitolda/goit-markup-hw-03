@@ -40,7 +40,6 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-outline: 2px solid red;
 }
 
 img {
@@ -210,10 +209,6 @@ margin-right: 93px;
 /* ------------------------aside styles------------------------------ */
 
 
-/* .aside-container{
-  display: flex;
-} */
-
 .aside-list{
   display: flex;
   gap: 10px;
@@ -239,25 +234,22 @@ flex-basis: calc((100% - 30px) / 3);
   background: var(--team-section-color);
 }
 
-/* .team-container{
-  display: flex;
-} */
+.team-title{
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 
 .team-list{
   display: flex;
   gap: 10px;
-  width: 1170px;
+  padding-bottom: 94px;
 }
 
 .team-item{
   flex-basis: calc((100% - 90px) / 4);
-  left: 215px;
-  top: 1632px;
   background: var(--white)
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-top: 94px;
-  padding-bottom: 50px;
   }
 
 .team-item-title {
@@ -287,6 +279,8 @@ flex-basis: calc((100% - 30px) / 3);
   width: 1600px;
   background: var(--section-color);
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer-link{
@@ -329,6 +323,20 @@ flex-basis: calc((100% - 30px) / 3);
 /* profile styles */
 /* ------------------------ styles------------------------------ */
 
+.profile-list{
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+padding-top: 121px;
+padding-bottom: 34px;
+align-items: center;
+justify-content: center;
+}
+
+.btn-portfolio{
+
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -353,7 +361,9 @@ flex-basis: calc((100% - 30px) / 3);
   color: var(--main-text-color);
   background: var(--btn-color);
   border-radius: 4px;
-  cursor: pointer;}
+  cursor: pointer;
+  padding: 6px 22px;
+}
 
 
 .btn-portfolio:hover,
@@ -363,7 +373,12 @@ flex-basis: calc((100% - 30px) / 3);
 }
 
 
+
 /* ------------------------content styles------------------------------ */
+
+.profile{
+  padding-bottom: 67px;
+}
 
 .content-title {
   width: 322px;
@@ -375,6 +390,23 @@ flex-basis: calc((100% - 30px) / 3);
   line-height: calc(36/18);
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.content-iten{
+flex-basis: calc((100% - 30px) / 3);
+box-sizing: border-box;
+background: var(--white) 
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 322px;
 }
 
 .content-subtitle{
