@@ -413,7 +413,7 @@ justify-content: center;
 }
 
 .content-iten{
-flex-basis: calc((100% - 30px) / 3);
+flex-basis: calc((100% - 60px) / 3);
 }
 
 .project{
@@ -427,5 +427,4 @@ flex-basis: calc((100% - 30px) / 3);
   line-height: calc(30/16);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
 }
