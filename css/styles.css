@@ -337,14 +337,15 @@ flex-basis: calc((100% - 30px) / 3);
 
 .profile{
 padding-top: 94px;
-padding-bottom: 67px;
+padding-bottom: 94px;
+margin: 0;
 }
 
 .profile-list{
 display: flex;
 flex-wrap: wrap;
 gap: 8px;
-margin-bottom: 50px;
+padding-bottom: 50px;
 align-items: center;
 justify-content: center;
 }
