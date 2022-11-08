@@ -75,11 +75,6 @@ margin-right: 93px;
 .link{
   text-decoration: none;
 }
-
-.current{
-  color: var(--accent);
-}
-
 .btn{
   cursor: pointer;
   font-family: inherit;
@@ -95,6 +90,11 @@ margin-right: 93px;
 
 .navigation{
   margin-right: auto;
+}
+
+
+.nav-link.current{
+  color: var(--accent);
 }
 
 .header-nav, .header-contacts {
@@ -164,8 +164,8 @@ margin-right: 93px;
   text-align: center;
   letter-spacing: 0.06em;
   background: var(--accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   color: var(--white);
   margin-top: 30px;
   padding: 10px 29px;
@@ -257,7 +257,7 @@ flex-basis: calc((100% - 30px) / 3);
 
 .team-project{
   background: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -337,14 +337,14 @@ flex-basis: calc((100% - 30px) / 3);
 
 .profile{
 padding-top: 94px;
-margin-bottom: 50px;
+padding-bottom: 67px;
 }
 
 .profile-list{
 display: flex;
 flex-wrap: wrap;
 gap: 8px;
-margin-bottom: 34px;
+margin-bottom: 50px;
 align-items: center;
 justify-content: center;
 }
@@ -374,18 +374,21 @@ justify-content: center;
   color: var(--main-text-color);
   background: var(--btn-color);
   border-radius: 4px;
+  border: none;
   cursor: pointer;
   padding: 6px 22px;
 }
 
+.btn-portfolio.current{
+  background-color: var(--accent);
+  color: var(--white);
+}
 
 .btn-portfolio:hover,
 .btn-portfolio:focus{
   background: var(--accent);
   color: var(--btn-color);
 }
-
-
 
 /* ------------------------content styles------------------------------ */
 
