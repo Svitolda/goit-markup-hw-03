@@ -1,7 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background-color: var(--white);
     color: var(--main-text-color);
 }
 :root { 
@@ -15,6 +15,7 @@ body{
 --btn-color: #F5F4FA;
 --footer-background-color:#2F303A;
 --border-project-color: #EEEEEE;
+--border-header:#ECECEC;
 }
 
 h1,
@@ -55,7 +56,7 @@ img {
 
 .header{
 background: var(--white);
-
+border-bottom: 1px solid var(--border-header);
 }
 
 .logo-link{
@@ -89,8 +90,7 @@ margin-right: 93px;
 .header-container{
   display: flex;
   align-items: center;
-  height: 80px;
-  gap: 50px;
+  height: 80px; 
 }
 
 .navigation{
@@ -132,7 +132,6 @@ margin-right: 93px;
 /* ------------------------section styles------------------------------ */
 
 .section {
-  width: 1600px;
   background: var(--section-color);
   height: 600px;
   left: 0px;
@@ -140,7 +139,7 @@ margin-right: 93px;
   margin: 0 auto;
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .header-container{
@@ -158,11 +157,7 @@ margin-right: 93px;
 }
 
 .section-btn {
-  width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 430px;
-  background: var(--btn-color);
+  background: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--main-text-color);
@@ -181,7 +176,7 @@ margin-right: 93px;
 }
 
 .about{
-  padding: 94px 215px;
+  padding: 94px 0;
 }
 
 .about-list{
@@ -211,9 +206,13 @@ margin-right: 93px;
 /* ------------------------aside styles------------------------------ */
 
 
+.aside{
+  padding-bottom: 94px;
+}
+
 .aside-list{
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 .aside-list-item{
@@ -226,14 +225,14 @@ flex-basis: calc((100% - 30px) / 3);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-bottom: 50px;
-  
+  margin-bottom: 50px;
 }
 
 /* ------------------------team styles------------------------------ */
 
 .team {
   background: var(--team-section-color);
+  padding-bottom: 94px;
 }
 
 .team-title{
@@ -243,16 +242,20 @@ flex-basis: calc((100% - 30px) / 3);
 
 .team-list{
   display: flex;
-  gap: 10px;
-  padding-bottom: 94px;
+  gap: 30px;
 }
 
 .team-item{
   flex-basis: calc((100% - 90px) / 4);
-  background: var(--white)
+  }
+
+.team-project{
+  background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  }
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-item-title {
   font-weight: 500;
@@ -261,7 +264,6 @@ flex-basis: calc((100% - 30px) / 3);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-top: 30px;
   padding-bottom: 10px;
 }
 
@@ -278,7 +280,6 @@ flex-basis: calc((100% - 30px) / 3);
 
 .footer {
   background: var(--footer-background-color);
-  width: 1600px;
   background: var(--section-color);
   margin: 0 auto;
   padding-top: 60px;
@@ -296,7 +297,10 @@ flex-basis: calc((100% - 30px) / 3);
 
 .address{
   margin-top: 20px;
-  margin-bottom: 60px;
+}
+
+.address-list-item{
+  margin-bottom: 9px;
 }
 
 .address-link{
@@ -325,19 +329,20 @@ flex-basis: calc((100% - 30px) / 3);
 /* profile styles */
 /* ------------------------ styles------------------------------ */
 
+.profile{
+padding-top: 94px;
+margin-bottom: 50px;
+}
+
 .profile-list{
 display: flex;
 flex-wrap: wrap;
 gap: 8px;
-padding-top: 121px;
-padding-bottom: 34px;
+margin-bottom: 34px;
 align-items: center;
 justify-content: center;
 }
 
-.btn-portfolio{
-
-}
 
 .visually-hidden {
   position: absolute;
@@ -383,16 +388,11 @@ justify-content: center;
 }
 
 .content-title {
-  width: 322px;
-  height: 36px;
-  left: 239px;
-  top: 603px;
   font-style: normal;
   font-size: 18px;
   line-height: calc(36/18);
   letter-spacing: 0.06em;
   color: var(--main-text-color);
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
@@ -410,16 +410,9 @@ flex-basis: calc((100% - 30px) / 3);
   padding: 20px 24px;
   border: 1px solid var(--border-project-color);
   border-top: 0;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
 }
 
 .content-subtitle{
-  width: 322px;
-  height: 30px;
-  left: 239px;
-  top: 643px;
-  font-style: normal;
   font-size: 16px;
   line-height: calc(30/16);
   letter-spacing: 0.03em;
