@@ -157,17 +157,23 @@ margin-right: 93px;
 }
 
 .section-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30/16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   background: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--main-text-color);
+  color: var(--white);
   margin-top: 30px;
   padding: 10px 29px;
 }
 .section-btn:hover,
 .section-btn:focus{
   background: var(--accent);
-  color: var(--btn-color);
+  color: var(--black);
 }
 /* ------------------------about styles------------------------------ */
 
@@ -331,7 +337,7 @@ flex-basis: calc((100% - 30px) / 3);
 
 .profile{
 padding-top: 94px;
-margin-bottom: 50px;
+/* margin-bottom: 50px; */
 }
 
 .profile-list{
