@@ -337,7 +337,7 @@ flex-basis: calc((100% - 30px) / 3);
 
 .profile{
 padding-top: 94px;
-/* margin-bottom: 50px; */
+margin-bottom: 50px;
 }
 
 .profile-list{
