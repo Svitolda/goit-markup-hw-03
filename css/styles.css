@@ -244,11 +244,6 @@ flex-basis: calc((100% - 30px) / 3);
   background: var(--team-section-color);
 }
 
-/* .team-title{
-  padding-top: 94px;
-  padding-bottom: 50px;
-} */
-
 .team-list{
   display: flex;
   gap: 30px;
