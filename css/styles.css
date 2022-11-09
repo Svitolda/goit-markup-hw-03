@@ -142,10 +142,6 @@ background-color: var(--section-color);
 padding: 200px 0;
 }
 
-.header-container{
-  display: flex;
-}
-
 .section-title {
   width: 696px;
   margin: 0 auto;
@@ -247,7 +243,6 @@ flex-basis: calc((100% - 30px) / 3);
 .team-list{
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .team-item{
