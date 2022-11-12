@@ -299,9 +299,9 @@ flex-basis: calc((100% - 30px) / 3);
   margin-top: 20px;
 }
 
-/* .address-list-item{
+.address-list-item:not(:last-child) {
   margin-bottom: 9px;
-} */
+}
 
 .address-link{
   font-style: normal;
